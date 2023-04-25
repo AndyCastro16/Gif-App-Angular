@@ -1,0 +1,9 @@
+<img 
+[src]="url" 
+class="card-img-top animate__animated animate__flash" 
+[alt]="alt"
+(load)="onLoad()"
+[ngStyle]="{display: hasLoaded ? '': 'none'}"
+>
+
+<img *ngIf="!hasLoaded" src="assets/loader.svg" class="h-9 w-9 mt-2">

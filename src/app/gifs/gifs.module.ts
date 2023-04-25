@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { SearchBoxComponent } from './components/search-box/search-box.component';
 import { CardListComponent } from './components/card-list/card-list.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -10,10 +13,12 @@ import { CardListComponent } from './components/card-list/card-list.component';
   declarations: [
     MainPageComponent,
     SearchBoxComponent,
-    CardListComponent
+    CardListComponent,
+    CardsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports:[
     MainPageComponent

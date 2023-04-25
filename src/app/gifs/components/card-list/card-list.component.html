@@ -1,6 +1,5 @@
-<div class="col-12">
-    <ul>
-        <li>1</li>
-        <li>2</li>
-    </ul>
+
+<div class="columns-5">
+    <!-- Es muy importante usar el [gif]="gif", que nos permite enviar su valor al componente original(cards) -->
+    <gifs-cards *ngFor="let gif of gifs" class="pb-3" [gif]="gif"></gifs-cards>
 </div>
